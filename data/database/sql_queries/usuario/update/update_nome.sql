@@ -1,0 +1,5 @@
+/* Alterar nome */
+UPDATE PERFIS
+SET
+	NOME = @NOME,
+WHERE COD_PERFIL = @COD_PERFIL

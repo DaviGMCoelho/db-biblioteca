@@ -1,0 +1,5 @@
+/* Altera o estado de exemplares - Ativa, inativa, empresta... */
+UPDATE EXEMPLARES 
+SET
+	ID_ESTADO = (SELECT ID_ESTADO FROM ESTADO_EXEMPLARES WHERE ESTADO = @ESTADO)
+WHERE COD_EXEMPLAR = @COD_EXEMPLAR

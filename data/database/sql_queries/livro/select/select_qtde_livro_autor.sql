@@ -1,0 +1,6 @@
+/* Mostrar quantidade livros cada autor */
+SELECT a.AUTOR, COUNT(*) AS QUATIDADE
+FROM AUTORES a
+INNER JOIN LIVROS l
+	ON l.ID_AUTOR = a.ID_AUTOR
+GROUP BY (a.AUTOR)

@@ -1,0 +1,6 @@
+/* Mostrar quantidade livros cada gênero */
+SELECT g.GENERO, COUNT(*) AS QUATIDADE
+FROM GENEROS g
+INNER JOIN LIVROS l
+	ON l.ID_GENERO = g.ID_GENERO
+GROUP BY (g.GENERO)

@@ -1,0 +1,2 @@
+/* Quantidade exemplares */
+SELECT COUNT(*) FROM EXEMPLARES WHERE ID_LIVRO = @ID_LIVRO

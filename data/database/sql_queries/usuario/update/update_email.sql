@@ -1,0 +1,5 @@
+/* Alterar email */
+UPDATE PERFIS
+SET
+	EMAIL = @EMAIL,
+WHERE COD_PERFIL = @COD_PERFIL

@@ -1,0 +1,8 @@
+/* Mostra todos os livros cadastrados */
+SELECT l.NOME, g.GENERO, l.COD_LIVRO, l.EDICAO, l.DATA_PUBLICACAO, a.AUTOR
+	FROM LIVROS l
+	INNER JOIN GENEROS g
+		ON l.ID_GENERO = g.ID_GENERO
+	INNER JOIN AUTORES a
+		ON l.ID_AUTOR = a.ID_AUTOR
+

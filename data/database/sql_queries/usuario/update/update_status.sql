@@ -1,0 +1,5 @@
+/* Inativar / Ativar / Bloquear / Alterar status usuário */
+UPDATE PERFIS
+SET
+	STATUS = (SELECT ID_STATUS FROM STATUS_USUARIOS WHERE STATUS = @STATUS)
+WHERE COD_PERFIL = @COD_PERFIL

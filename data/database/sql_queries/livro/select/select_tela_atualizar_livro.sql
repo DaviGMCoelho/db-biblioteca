@@ -1,0 +1,15 @@
+/* Mostra informações de liovros no sistema, tela de atualizar livros */
+SELECT l.NOME, a.AUTOR, l.COD_LIVRO, GENERO, l.DATA_PUBLICACAO, COUNT(ex.ID_EXEMPLAR) AS QUANTIDADE
+	FROM LIVROS l
+	INNER JOIN AUTORES a
+		ON l.ID_AUTOR = a.ID_AUTOR
+	INNER JOIN GENEROS g
+		ON l.ID_GENERO = g.ID_GENERO
+	INNER JOIN EXEMPLARES ex
+		ON l.ID_LIVRO = ex.ID_LIVRO
+	GROUP BY
+		l.NOME, 
+		a.AUTOR, 
+		l.COD_LIVRO, 
+		g.GENERO, 
+		l.DATA_PUBLICACAO;

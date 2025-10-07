@@ -1,0 +1,2 @@
+/* Pega código do livro */
+SELECT ID_LIVRO FROM LIVROS WHERE COD_LIVRO = @COD_LIVRO
