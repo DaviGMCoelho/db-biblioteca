@@ -12,12 +12,12 @@ Durante essa etapa crucial no planejamento, foi realizadas tentativas de contato
 ### 2. Modelagem de Entidade-Relacionamento - MER
 Como discutido na faculdade e no livro “Sistemas de Banco de Dados” de Elmasri e Navathe na página 131. A primeira etapa da modelagem do banco de dados é a criação e elaboração de um Modelo Conceitual, criado para se conseguir uma visão clara do que precisa ser feito, como quais são os dados que irão ser recebidos e o relacionamento entre as tabelas, sendo a descrição conceitual e visual de como o Banco de Dados precisa ser criado para que ele possa armazenar e atuar de forma correta dentro do projeto.
 
-![modelo_entidade_relacionamento](images\MER.png)
+![modelo_entidade_relacionamento](images/MER.png)
 
 ### 3. Diagrama de Entidade-Relacionamento - DER
 Como discutido em sala de aula e no site na IBM na página [O que é diagrama de entidade e relacionamento (DER)?](https://www.ibm.com/think/topics/entity-relationship-diagram). A próxima etapa da elaboração de um banco de dados é a criação do Diagrama de Entidade-Relacionamento, sendo a criação visual da estrutura do banco de dados de forma mais detalhada e lógica, garantindo uma melhor clareza dos dados, realizando o planejamento de como os dados serão armazenados.
 
-![diagrama_entidade_relacionamento](images\DER.png)
+![diagrama_entidade_relacionamento](images/DER.png)
 
 ### 4. Desenvolviemnto em linguagem SQL
 O desenvolvimento do banco no Microsoft SQL Server pode ser visto em:
@@ -28,11 +28,12 @@ A conexão com o banco usando a linguagem Python pode ser vista em:
 
 ## Diretórios principais:
 ### 1. Estrutura de pastas - Requisições / Queries
-Para uma melhor organização e escalabilidade, os scripts do banco foram divididos em diretórios:  
-**Observação:** Tudo falado aqui está dentro da pasta `database` localizada em `data`!
-`db_setup/` -> Aqui fica o script sql completo de criação do banco.  
-`sql_queries/` -> Todas as requisições ao banco ficam aqui, ex: Comandos de Insert, Select e Update
-`db_config` -> Aqui fica armazenado todas as requisições relacionadas as configurações do banco
+Para uma melhor organização e escalabilidade, os scripts do banco foram divididos em diretórios:   
+
+**Observação:** Tudo falado aqui está dentro da pasta `database` localizada em `data`!  
+*   `db_setup/` -> Aqui fica o script sql completo de criação do banco.  
+*   `sql_queries/` -> Todas as requisições ao banco ficam aqui, ex: Comandos de Insert, Select e Update.  
+*   `db_config` -> Aqui fica armazenado todas as requisições relacionadas as configurações do banco
 
 As pastas dentro de `sql_queries/` estão divididas por entidades e tipos de requisição, exemplo:
 **Caminho:** `sql_queries/livro/select/`
